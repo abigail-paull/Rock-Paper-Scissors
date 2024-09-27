@@ -4,14 +4,17 @@ import paper from "./assets/hand-svgrepo-com.svg";
 import scissors from "./assets/two-fingers-svgrepo-com.svg";
 
 const Game = () => {
+ 
+ 
   return (
     <main className="game">
       <section>
+      
         <div className="rock option">
-          <img src={rock} alt="" />
+       < img src={rock } alt="" />
         </div>
         <div className="paper option">
-          <img src={paper} alt="" />
+          <img src={paper} />
         </div>
       </section>
 

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Intro from "./Intro";
 import ScoreBoard from "./ScoreBoard";
@@ -6,17 +7,51 @@ import Game from "./Game";
 import AwaitingResult from "./AwaitingResult";
 
 function App() {
-  return (
-    // <>
-    //   <ScoreBoard />
-    //   {/* <Game /> */}
-    //   {/* <AwaitingResult/> */}
-    // </>
+
+  const [start, setgamestart] = useState(false);
+  
+  if (start) {
+    return (
+      <>
+      <ScoreBoard  />
+      <Game  />
+      </>
+    ); 
+
+    } 
+  
+    return (
+    
     <main>
-
-      <Intro/>
+      <Intro start={setgamestart} />
+      <AwaitingResult/>
     </main>
-  );
-}
+    );
+    }
+    
+    export default App;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+  
+   
+  
 
-export default App;
+  
+  
+
+    
+  
+    
