@@ -7,5 +7,6 @@ Cybite's incourse project for frontend students.
 - css
 - javascript
 - react
+(![alt text](image-1.png))
   
 [see Project UI adataption](https://dribbble.com/shots/13946587-Rock-Paper-Scissors-game)
