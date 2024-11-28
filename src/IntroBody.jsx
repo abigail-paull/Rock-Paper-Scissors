@@ -1,7 +1,9 @@
 import React from "react";
 
 const IntroBody = ({start}) =>  {
+  
   return (
+    <>
     <section className="landing_page">
       <div>
         <h1>Rock Paper Scissors</h1>
@@ -9,6 +11,9 @@ const IntroBody = ({start}) =>  {
       </div>
       <div className="btn" onClick={()=>start(true)}>Start</div>
     </section>
+    
+    </>
+    
   );
 };
 

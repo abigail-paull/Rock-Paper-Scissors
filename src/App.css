@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Barlow:wght@300;400;700");
+ @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Barlow:wght@300;400;700");
 
 html,
 body {
@@ -27,6 +27,7 @@ img {
 .intro h1 {
   font-size: 52px;
   text-shadow: 3px 3px #ff0000;
+  
 }
 .intro p {
   font-size: 24px;
@@ -56,6 +57,7 @@ img {
   width: 200px;
   border-radius: 0.4rem;
   background-color: red;
+  color: #fff;
   font-family: "Audiowide", sans-serif;
 }
 .btn:hover {
@@ -65,12 +67,11 @@ img {
   rotate: -5deg;
   transition: rotate 0.5s ease;
 }
-
-/* == intro navbar */
-.nav_bar {
+/* === intro body */
+ .nav_bar {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 .nav_bar img {
   height: 50px;
@@ -79,7 +80,12 @@ img {
 }
 .profile {
   border-radius: 50%;
-}
+} 
+.nav_bar img:hover{
+  background-color: hsl(24, 84%, 52%);;
+  border-radius: 20px;
+} 
+
 
 /* == app image */
 .app_img {
@@ -201,7 +207,38 @@ header p {
   align-items: center;
   text-align: center;
 }
+button {
+  
+  margin: 10px;
+  padding: 10px 25px ;
+  cursor: pointer;
+  font-size: 30px;
+  margin-top: 32px;
+ border-radius: 10px;
+}
+button:hover{
+  background-color: #ff0000;
+  color: #fff;
+  
+}
+.choices{
+  font-size: 52px;
+  text-shadow: 3px 3px #ff0000;
 
+  
+}
+.cap_1{
+  font-size: 40px;
+  text-shadow: 3px 3px #ff0000;
+   padding: 10px 30px;
+   border-radius: 10px;
+}
+.cap_2{
+  font-size: 40px;
+  text-shadow: 3px 3px #ff0000;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
 @media only screen and (max-width: 720px) {
   header div{
     padding: 0 0.1rem;
@@ -233,4 +270,19 @@ header p {
     width: 100px;
     border-width: 1.5rem;
   }
-}
+} 
+  
+
+  
+
+  
+  
+  
+
+
+
+  
+
+
+
+

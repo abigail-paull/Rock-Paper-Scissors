@@ -1,6 +1,6 @@
 import React from "react";
 
-const ScoreBoard = () => {
+const ScoreBoard = ({playerScore, computerScore}) => {
   return (
     <header>
       <h3 >
@@ -9,12 +9,12 @@ const ScoreBoard = () => {
       <section>
         <div className="player">
           <p>Player</p>
-          <h2>4</h2>
+          <h2>{playerScore}</h2>
         </div>
         <p className="colon">:</p>
         <div className="computer">
           <p>computer</p>
-          <h2>1</h2>
+          <h2>{computerScore}</h2>
         </div>
       </section>
     </header>
@@ -22,3 +22,28 @@ const ScoreBoard = () => {
 };
 
 export default ScoreBoard;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
