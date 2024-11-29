@@ -6,6 +6,7 @@ import Game from "./Game";
 import AwaitingResult from "./AwaitingResult";
 
 
+
 function App() {
   const [start, setgamestart] = useState(false);
   const [playerScore, setPlayerScore] = useState(0);
@@ -46,6 +47,7 @@ function App() {
   if (start) {
     return (
       <>
+      
        <ScoreBoard playerScore={playerScore} computerScore={computerScore} />
        
        {result ? (
@@ -73,6 +75,12 @@ function App() {
 
   return (
     <>
+      <Intro start={setgamestart}/>
+      
+    </>
+    
+  );
+}
       
         
           
@@ -81,12 +89,6 @@ function App() {
     
      
 
-      <Intro start={setgamestart}/>
-      
-    </>
-    
-  );
-}
 
 export default App;
 

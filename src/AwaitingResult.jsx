@@ -24,12 +24,6 @@ const AwaitingResult = ({ result, playAgain, playerChoice, computerChoice }) => 
           <img src={images[playerChoice]} alt={playerChoice}  />
         </div>
       </section>
-          
-         
-          
-            
-          
-          
       <section>
         <h1>{result}</h1>
         <button onClick={playAgain} className="btn">Play Again</button>
@@ -53,6 +47,12 @@ const AwaitingResult = ({ result, playAgain, playerChoice, computerChoice }) => 
 export default AwaitingResult;
 
 
+          
+         
+          
+            
+          
+          
 
 
 

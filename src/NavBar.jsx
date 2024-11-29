@@ -1,6 +1,7 @@
 import React from "react";
 import profileImage from "./assets/vecteezy_portrait-of-a-beautiful-girl-face-side-view-wearing-a-flat_16127643-1.jpg";
 import settings from "./assets/settings-svgrepo-com.svg";
+import LightMode from "./LightMode";
 
 const NavBar = () => {
   const handleProfileClick = () => {
@@ -12,6 +13,8 @@ const NavBar = () => {
   };
 
   return (
+    <>
+    
     <section className="nav_bar">
       
       <img
@@ -21,7 +24,7 @@ const NavBar = () => {
         onClick={handleProfileClick}
       />
 
-    
+<LightMode/>
       <img
         src={settings}
         alt="Settings"
@@ -29,6 +32,10 @@ const NavBar = () => {
         onClick={handleSettingsClick}
       />
     </section>
+
+    
+    
+    </>
   );
 };
 
